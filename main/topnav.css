@@ -1,0 +1,183 @@
+/*nav Brand*/
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  line-height: 50px;
+}
+
+.btn-img {
+height: 37px; 
+width: 37px;
+float: left;
+margin-left: 10px;
+margin-top: 0;
+margin-bottom: 10px;
+line-height: 50px;
+border-radius: 50%;
+box-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff0080, 0 0 15px #ff0080, 0 0 25px #ff0080, 0 0 30px #ff0080, 0 0 50px #ff0080;
+}
+
+#logotxt {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-left: 10px;
+  float: left;
+  text-shadow: 2px 2px 4px #000000;
+}
+/*NAvbar */
+ .navbar {
+      margin-bottom: 0!important;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+      padding-top: 30px;
+      padding-right: 20px;
+      padding-left: 20px;
+  }
+  .navbar li > a, .navbar .navbar-brand {
+      color: #fff !important;
+      font-size: 16px;
+      text-align: center;
+      text-shadow: 1px 1px 2px black, 0 0 3px white, 0 0 3px white;
+  }
+  .navbar-nav li > a:hover, .navbar-nav li.active > a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-inverse, .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+
+ #btn-login {
+  cursor:pointer;
+  }
+/*menu link glow*/
+/*#glow {
+  text-shadow: 1px 1px 2px black, 0 0 3px white, 0 0 3px white;
+}*/
+/*collapse*/
+
+/*dropdown*/
+
+.dropdown-menu {
+  background-color: black!important;
+  text-align: center!important;
+  width: 100%;
+}
+
+.dropdown-menu > li {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+
+/*THE CSS - THE NAVIGATION BAR BEFORE SCROLL*/
+
+@media screen and (min-width: 768px){
+   #custom-nav {
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+    z-index: 999;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: background .5s ease-in-out, opacity .5s ease;
+    -moz-transition: background .5s ease-in-out, opacity .5s ease;
+    transition: background .5s ease-in-out, opacity .5s ease;
+    }
+    #custom-nav .dropdown-menu {
+    border-radius: 0;
+    border: none;
+    border-top: 5px solid transparent;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-top: 0;
+    }
+    #custom-nav .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: padding-top .5s ease, padding-bottom .5s ease;
+    -moz-transition: padding-top .5s ease, padding-bottom .5s ease;
+    transition: padding-top .5s ease, padding-top .5s ease, padding-bottom .5s ease;
+    }
+
+
+}
+
+/*CSS - AFTER THE SCROLL*/
+
+@media screen and (max-width: 767px){
+
+    .navbar-fixed-top {
+        z-index: 999;
+    }
+
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    } 
+}
+
+
+/*animated search*/
+
+.search {
+    text-align: left;
+    background-color: transparent;
+    width: 50px;
+    height: 45px;
+    margin: 0 auto;
+    color: white;
+    border-bottom: 3px solid red;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+.search:focus {
+    width: 70%;
+}
+
+ .glyphicon-search {
+  margin: 10px 10px 10px 20px;
+  text-align: right;
+  font-size: 18px!important;
+}
+
+
+/*bottom border link*/
+.cool-link {
+  display: inline-block;
+  color: red;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: red;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+  margin-top: 5px;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+}
+    
+
+
+

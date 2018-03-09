@@ -1,0 +1,49 @@
+.glyphicon
+{
+    margin-right:4px !important; /*override*/
+}
+
+.pagination .glyphicon
+{
+    margin-right:0px !important; /*override*/
+}
+
+.pagination a
+{
+    color:red!important;
+}
+
+.panel ul
+{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+.news-item
+{
+    padding:4px 4px;
+    margin:0px;
+    border-bottom:1px dotted #555; 
+}
+
+.news-item img {
+	margin-right: 10px;
+	height: 100px;
+	width: 100px;
+}
+
+.news-item a {
+	color: red;
+	font-weight: bold;
+}
+
+.panel-heading {
+	color: white!important;
+	background-color: #f44336!important;
+}
+
+.news-box {
+	margin-top: 30px;
+}
+

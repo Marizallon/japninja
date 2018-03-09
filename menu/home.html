@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" container="IE=edge,chrome=1">
+		<meta name="viewport" 
+    content="width=device-width, 
+		initial-scale= 1,
+    maximum-scale=1,
+    user-scalable=no"><!-- user-scalable=no -->
+
+		<title>JAPANinja</title>
+		<meta name="description" content="JAPANinja Homepage" />
+		<meta name="keywords" content="Japan, map, travel, explore, regions of Japan" />
+		<meta name="author" content="Maria Riza Espedillon" />	
+		
+        <!-- css - bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+     <!-- css - bootstrap font-awesome-->
+    <!-- <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- +++++++++++++++++++++++CSS LINKS++++++++++++++++++++++++++++++ -->
+      <!-- main style -->
+    <link rel="stylesheet" type="text/css" href="../main/style.css">
+   		<!-- topnav -->
+   	<link rel="stylesheet" type="text/css" href="../main/topnav.css">
+      <!-- login form modal -->
+    <link rel="stylesheet" type="text/css" href="../main/logform.css">
+      <!-- carousel -->
+    <link rel="stylesheet" type="text/css" href="../main/carousel.css">
+      <!--  open nav slide down -->
+    <link rel="stylesheet" type="text/css" href="../main/open.css">
+    <!--  multi slider-->
+    <link rel="stylesheet" type="text/css" href="../main/multi.css">
+    <!--  news ticker-->
+    <link rel="stylesheet" type="text/css" href="../main/news.css">
+    <!--  swipe touch slider-->
+    <link rel="stylesheet" type="text/css" href="../main/style-slider.css">
+      <!-- meadia queries for small screens -->
+    <link rel="stylesheet" type="text/css" href="../main/mediaq.css">
+    <!-- googlemapsPhil -->
+    <link rel="stylesheet" type="text/css" href="../main/gmapphil.css">
+    <!-- social media button hover effect -->
+    <link rel="stylesheet" type="text/css" href="../main/socialmedbut.css">
+  		<!-- shortcut icon LOGO of JAPANinja -->
+  	<link rel="shortcut icon" href="../img/logo/if_ninja-background_479477.ico">
+	</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- +++++++++++++++++++++++Navbar++++++++++++++++++++++++++++++ -->
+<nav id="custom-nav" class="navbar navbar-inverse navbar-fixed-top" data-spy="affix" data-offset-top="60">
+  <div class="">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="../index.html" target="_blank">
+      <img class="img-responsive btn-img" src="../img/logo/if_ninja-background_479477.ico" />
+      <p id="logotxt">JAPANinja</p></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a class="cool-link" href="#home">Home</a></li>
+         <li class="dropdown">
+              <a class="cool-link" href="#explore" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="cool-link" href="cs.html">Top Sights</a></li>
+                <li><a class="cool-link" href="cs.html">Japan Regions</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a class="cool-link" href="explore.html">See all</a></li>
+              </ul>
+            </li>
+        <li class="dropdown">
+              <a class="cool-link" href="#plan" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plan a Trip<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="cool-link" href="cs.html">Before You Go</a></li>
+                <li><a class="cool-link" href="cs.html">Transportation</a></li>
+                <li><a class="cool-link" href="cs.html">Accommodation</a></li>
+                <li><a class="cool-link" href="cs.html">Itinerary Ideas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a class="cool-link" href="explore.html">See all</a></li>
+              </ul>
+            </li>
+        <li><a class="cool-link" href="#interests">Interests</a></li>
+        <li><a class="cool-link" href="#events">Events</a></li>
+        <li><a class="cool-link" href="#contact">Contact</a></li>
+        <li>
+                      <span class="glyphicon glyphicon-search"></span>
+                      <input  type="search" class="search" placeholder="Search...">
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">   
+
+        <li id="glow">
+        <a class="cool-link" data-toggle="modal" data-target="#login-signup-modal" id="btn-login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- +++++++++++++++++++++++Modal Log In Form+++++++++++++++++++++++++++++ -->
+<div id="login-signup-modal" class="modal fade" tabindex="-1" role="dialog">
+   <div class="modal-dialog" role="document">
+    
+     <!-- login modal content -->
+        <div class="modal-content" id="login-modal-content">
+        
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" id="close-white" id="close-white">&times;</span></button>
+            <h4 class="modal-title"><span class="glyphicon glyphicon-lock"></span> Login Now!</h4>
+          </div>
+        
+          <div class="modal-body">
+          <form method="post" id="Login-Form" role="form">
+            <div class="form-group">
+                <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                <input name="email" id="email" type="email" class="form-control input-lg" placeholder="Enter Email" required data-parsley-type="email" >
+                </div>                      
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                <input name="password" id="login-password" type="password" class="form-control input-lg" placeholder="Enter Password" required data-parsley-length="[6, 10]" data-parsley-trigger="keyup">
+                 </div>                      
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-block btn-lg">LOGIN</button>
+          </form>
+        </div>
+        
+        <div class="modal-footer">
+          <p>
+          <a id="FPModal" href="javascript:void(0)">Forgot Password?</a> | 
+          <a id="signupModal" href="javascript:void(0)">Register Here!</a>
+          </p>
+        </div>
+        
+       </div>
+        <!-- login modal content -->
+        
+        <!-- signup modal content -->
+        <div class="modal-content" id="signup-modal-content">
+        
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" id="close-white">&times;</span></button>
+          <h4 class="modal-title"><span class="glyphicon glyphicon-lock" id="close-white"></span> Signup Now!</h4>
+        </div>
+                
+        <div class="modal-body">
+          <form method="post" id="Signin-Form" role="form">
+            <div class="form-group">
+                <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                <input name="email" id="email" type="email" class="form-control input-lg" placeholder="Enter Email" required data-parsley-type="email">
+                </div>                     
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                <input name="password" id="passwd" type="password" class="form-control input-lg" placeholder="Enter Password" required data-parsley-length="[6, 10]" data-parsley-trigger="keyup">
+                </div>                      
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                <input name="password" id="confirm-passwd" type="password" class="form-control input-lg" placeholder="Retype Password" required data-parsley-equalto="#passwd" data-parsley-trigger="keyup">
+                </div>                      
+            </div>
+            <button type="submit" class="btn btn-block btn-lg">CREATE ACCOUNT!</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p id="black-txt">Already a Member ? <a id="loginModal" href="javascript:void(0)">Login Here!</a></p>
+        </div>
+       </div>
+       <!-- signup modal content -->
+        
+       <!-- forgot password content -->
+       <div class="modal-content" id="forgot-password-modal-content">
+        
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" id="close-white">&times;</span></button>
+          <h4 class="modal-title"><span class="glyphicon glyphicon-lock"></span> Recover Password!</h4>
+        </div>
+        
+        <div class="modal-body">
+          <form method="post" id="Forgot-Password-Form" role="form">
+            <div class="form-group">
+                <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                <input name="email" id="email" type="email" class="form-control input-lg" placeholder="Enter Email" required data-parsley-type="email">
+                </div>                     
+            </div>         
+            <button type="submit" class="btn btn-block btn-lg">
+              <span class="glyphicon glyphicon-send"></span> SUBMIT
+            </button>
+          </form>
+        </div>
+        
+        <div class="modal-footer">
+          <p id="red-txt">Remember Password ? <a id="loginModal1" href="javascript:void(0)">Login Here!</a></p>
+        </div>
+        
+       </div>        
+       <!-- forgot password content -->
+  
+  </div>
+</div>
+<!-- +++++++++++++++++++++++Screen1++++++++++++++++++++++++++++++ -->
+<section id="screen1">
+<!-- +++++++++++++++++++++++Carousel++++++++++++++++++++++++++++++ -->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+
+        <div id="japan" class="carousel-caption">
+   
+        <p id="japan-txt">Japan</p>
+        </div>
+
+        <div id="btn-cities" class="carousel-caption">
+        <button class="ghost-button-transition" onclick="openNav()">
+        <p class="btn-c-txt">Cities</p>
+        </button>
+        </div>
+
+        <div class="item active">
+          <img id="img-responsive" src="../img/caro/caro1.jpg" alt="sushi">
+          <div id="cap" class="carousel-caption">
+            <p id="cap-txt">is sushi central</p>
+          </div>      
+        </div>
+
+        <div class="item">
+          <img id="img-responsive" src="../img/caro/caro2.jpg" alt="hot spring">
+          <div id="cap" class="carousel-caption">
+            <p id="cap-txt">is soothing soaking in hot spring</p>
+          </div>      
+        </div>
+
+    <div class="item">
+          <img id="img-responsive" src="../img/caro/caro3.jpg" alt="orange gates">
+          <div id="cap" class="carousel-caption">
+            <p id="cap-txt">is a walk in mysterious places</p>
+          </div>      
+        </div>
+
+      <div class="item">
+          <img id="img-responsive" src="../img/caro/caro4.jpg" alt="city">
+          <div id="cap" class="carousel-caption">
+            <p id="cap-txt">is a big city of lights</p>
+          </div>      
+        </div>
+
+       <div class="item">
+          <img id="img-responsive" src="../img/caro/caro5.jpg" alt="Image">
+          <div id="cap" class="carousel-caption">
+            <p id="cap-txt">is iconic views</p>
+          </div>      
+    </div>
+  </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</section>
+<!-- +++++++++++++++++++++++Home++++++++++++++++++++++++++++++ -->
+<section id="home">
+<!-- company intro -->
+<div class="jumbotron text-center">
+  <h1 class="slideanim padding-top">JAPANinja</h1> 
+  <p>We Specialize in Japan Tour</p> 
+  <form>
+    <div class="input-group padding">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div><!-- end company intro -->
+
+<div id="about" class="container-fluid" data-spy="scroll">
+  <div class="row">
+    <div class="col-sm-8 padding">
+      <h2>About JAPANinja</h2><br>
+      <h4>A travel agency is a private retailer or public service that provides travel and tourism related services to the public on behalf of suppliers such as activities, airlines, car rentals, cruise lines, hotels, railways, travel insurance, and package tours.
+      <br>
+      <small>Source:<cite><a href="https://en.wikipedia.org/wiki/Travel_agency" target="_blank">Travel agency</a></cite></small>   
+      </h4><br>
+      <p>In this new era, traveling is no longer just the rich man’s hobby. A new cult of travelers have emerged lately – they’re known as travel ninjas or hackers – travelers who use various tactics to get free flights, discounted hotel stays, class upgrades, elite status and more. As long as you invest some time and effort to research and investigate, chances of traveling for free are  easier than ever.</p>
+      <small>Source:<cite><a href="https://www.wildjunket.com/how-to-be-a-travel-ninja/" target="_blank">Travel ninja</a></cite></small>
+      <br><br>  
+      <a class="btn btn-lg" href="mailto:mariarizaespedillon@gmail.com">Get in Touch <span class="glyphicon glyphicon-send"></span></a>
+    </div>
+    <div class="col-sm-4 div-logo">
+      <span class="glyphicon glyphicon-plane logo slideanim"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4 div-logo">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8 padding">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> We are a team that creates unique and socially responsible travel experiences, providing services beyond expectations.</h4><br>
+      <p><strong>VISION:</strong> To strengthen our position as the leading tourism company providing quality, creative, innovative, competitive and socially responsible services in the region.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ++++++++++++++++++++++++++Explore+++++++++++++++++++++++++++++++++++++ -->
+<section id="explore" class=" text-center padding-top">
+<div class="container-fluid">
+  <h1 class="slideanim">Welcome to Japan</h1><br>
+  <p class="underline">_____</p>
+  <br>
+  <h3 class="padding">Japan is truly timeless, a place where ancient traditions are fused with modern life as if it were the most natural thing in the world.</h3>
+  <br><br>
+
+  <div class="container">
+   
+  <div id="read" class="collapse slideanim left-a">
+    <blockquote>The "Land of the Rising Sun" is a country where the past meets the future. Japanese culture stretches back millennia, yet has also been quick to adopt and created the latest modern fashions and trends.</blockquote>
+
+    <p>Japan is often difficult to understand for those educated in the west. It can seem full of contradictions. Many Japanese corporations dominate their industries, yet if you read the financial news it seems like Japan is practically bankrupt. Cities are as modern and high tech as anywhere else, but tumbledown wooden shacks can still be spotted next to glass fronted designer condominiums. On an average subway ride, you might see childishly cute character toys and incredibly violent pornography - sometimes enjoyed by the same passenger, at the same time! Japan has beautiful temples and gardens which are often surrounded by garish signs and ugly buildings. The most acclaimed restaurant in the country, which costs hundreds of dollars for dinner, is a small shop located in a subway station seating less than a dozen people. In the middle of modern skyscrapers you’ll discover sliding wooden doors which lead to traditional chambers with tatami mats, shoji screens, and calligraphy, suitable for traditional tea ceremonies. These juxtapositions can seem perplexing or jarring to those used to the more uniform nature of European and North American cities, but if you let go, and accept the layered aesthetics, you’ll find interesting and surprising places throughout the country.</p>
+    <small>Source:<cite><a href="https://wikitravel.org/en/Japan" target="_blank">Japan</a></cite></small>
+    <br> <br>
+  </div>
+   <button type="button" class="btn btread btn-lg slideanim" data-toggle="collapse" data-target="#read">
+      <span class="glyphicon glyphicon-collapse-down"></span>Read More
+   </button>
+</div>
+
+<div class="container-fluid">
+  <h1 class="slideanim">Top Sights in Japan</h1><br>
+  <p class="underline">_____</p>
+  <br>
+</div>
+
+<!--The main div for carousel-->
+<div class="container show">
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+    <img src="top/golden_pavilion.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+    <img src="top/mount_fuji.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+    <img src="top/tokyo_imperial_palace.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
+    <img src="top/tokyo_tower.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+    <img src="top/todaiji_temple.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="top/great_buddha_of_kamakura.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+    <img src="top/himeji_castle.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+    <img src="top/kiyomizu_dera.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+    <img src="top/jigokudani_monkey_park.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+    <img src="top/hiroshima_peace_memorial.jpg" style="width:100%">
+  </div>
+    
+<!--   <a class="prev" onclick="plusSlides(-1)"><span class="fa fa-chevron-left"></span></a>
+  <a class="next" onclick="plusSlides(1)"><span class="fa fa-chevron-right"></span></a> -->
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+<div class="carousel slide row" data-ride="carousel" data-type="multi" data-interval="2000" id="fruitscarousel">
+
+    <div class="carousel-inner text-center">
+        <div class="item active">
+            <div class="col-md-3 col-sm-3 col-xs-3 grow">
+            <img src="top/golden_pavilion.jpg" class="img-responsive demo cursor" onclick="currentSlide(1)" alt="Golden Pavilion"><a href="cs.html">Golden Pavilion</a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-3 col-xs-3 grow">
+            <img src="top/mount_fuji.jpg" class="img-responsive demo cursor" onclick="currentSlide(2)" alt="Mount Fuji"><a href="cs.html">Mount Fuji</a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-3 col-xs-3 grow">
+            <img src="top/tokyo_imperial_palace.jpg" class="img-responsive demo cursor" onclick="currentSlide(3)" alt="Tokyo Imperial Palace"><a href="cs.html">Tokyo Imperial Palace</a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-3 col-xs-3 grow">
+           <img src="top/tokyo_tower.jpg" class="img-responsive demo cursor" onclick="currentSlide(4)" alt="Tokyo Tower"><a href="cs.html">Tokyo Tower</a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-3 col-xs-3 grow"> 
+            <img src="top/todaiji_temple.jpg" class="img-responsive demo cursor" onclick="currentSlide(5)" alt="Todaiji Temple"><a href="cs.html">Todaiji Temple</a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-3 col-xs-3 grow">
+            <img src="top/great_buddha_of_kamakura.jpg" class="img-responsive demo cursor" onclick="currentSlide(6)" alt="Great Buddha of Kamakura"><a href="cs.html">Great Buddha of Kamakura</a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-3 col-xs-3 grow">
+            <img src="top/himeji_castle.jpg" class="img-responsive demo cursor" onclick="currentSlide(7)" alt="Himeji Castle"><a href="cs.html">Himeji Castle</a></div>
+        </div>
+         <div class="item">
+            <div class="col-md-3 col-sm-3 col-xs-3 grow">
+            <img src="top/kiyomizu_dera.jpg" class="img-responsive demo cursor" onclick="currentSlide(8)" alt="Kiyomizu-dera"><a href="cs.html">Kiyomizu-dera</a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-3 col-xs-3 grow">
+           <img src="top/jigokudani_monkey_park.jpg" class="img-responsive demo cursor" onclick="currentSlide(9)" alt="Jigokudani Monkey Park"><a href="cs.html">Jigokudani Monkey Park</a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-3 col-xs-3 grow">
+            <img src="top/hiroshima_peace_memorial.jpg" class="img-responsive demo cursor" onclick="currentSlide(10)" alt="Hiroshima Peace Memorial"><a href="cs.html">Hiroshima Peace Memorial</a></div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#fruitscarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+    <a class="right carousel-control" href="#fruitscarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> 
+</div>
+
+</div> <!-- end show -->
+
+<div class="left-a">
+ <small>Source:<cite><a href="http://www.touropia.com/tourist-attractions-in-japan/" target="_blank">10 Top Tourist Attractions in Japan</a></cite></small>
+</div><!-- end container fluid -->
+
+</section>
+
+<!-- ++++++++++++++++++++++++++Plan+++++++++++++++++++++++++++++++++++++ -->
+<section id="plan" class="bg-grey">
+  <div class="container-fluid text-center"> 
+  <h1 class="slideanim padding-top">Plan your Trip</h1>
+   <p class="underline">_____</p></div>
+<div class="p-container text-center">
+    <div class="col-sm-3 slideanim">
+      <a href="cs.html" target="_blank">
+        <div class="grow">
+        <img src="../img/plan/luggage.png" class="img-responsive img-plan" alt="Image">
+        <h3>Before you go</h3>
+        </div>
+        <p class="plan-txt">Things to know before you depart</p>
+      </a>
+    </div><!-- end col3 -->
+
+    <div class="col-sm-3 slideanim">
+     <div class="grow"> 
+      <a href="cs.html" target="_blank">
+      <img src="../img/plan/train.png" class="img-responsive img-plan" alt="Image">
+      <h3>Transportation</h3>
+      </div>
+      <p class="plan-txt">Find the best mode of transport for your trip</p>
+      </a> 
+    </div><!-- end col3 -->
+
+    <div class="col-sm-3 slideanim"> 
+      <div class="grow"> 
+      <a href="cs.html" target="_blank">
+      <img src="../img/plan/hotel.png" class="img-responsive img-plan" alt="Image">
+      <h3>Accommodation</h3>
+      </div>
+      <p class="plan-txt">Choose the right places to stay overnight</p>
+      </a>    
+    </div><!-- end col3 -->
+
+    <div class="col-sm-3 slideanim">
+    <a href="cs.html" target="_blank"> 
+      <div class="grow"> 
+      <img src="../img/plan/gps.png" class="img-responsive img-plan"  alt="Image">
+      <h3>Itinerary Ideas</h3> 
+      </div>
+      <p class="plan-txt">Inspiration for creating your own trip plan</p>  
+      </a> 
+    </div> 
+</div><!-- end-pcontainer -->
+
+</div>
+</section>
+
+<!-- ++++++++++++++++++++++++++interests+++++++++++++++++++++++++++++++++++++ -->
+<section id="interests" class="padding-top">
+<div class="container-fluid text-center"> 
+  <h1 class="slideanim">Discover your Interest</h1>
+   <p class="underline">_____</p>
+</div>
+<!-- Container (Interests Section) -->
+<div class="container-fluid text-center white-txt fixed-bg">
+ 
+  <br>
+  <div class="row slideanim white-txt set1">
+    <div class="col-sm-4">
+      <a href="cs.html" target="_blank"><span>
+      <img class="logo-small img-responsive" src="../img/japanint/torii-gate.png">
+      </span></a>
+      <h4>TEMPLES</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <a href="cs.html" target="_blank"><span>
+      <img class="logo-small img-responsive" src="../img/japanint/omamori.png">
+      </span></a>
+      <h4>SHRINES</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <a href="cs.html" target="_blank"><span>
+      <img class="logo-small img-responsive" src="../img/japanint/pagoda.png">
+      </span></a>
+      <h4>CASTLES</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim white-txt set2">
+    <div class="col-sm-4">
+      <a href="cs.html" target="_blank"><span>
+      <img class="logo-small img-responsive" src="../img/japanint/soaking-tub.png">
+      </span></a>
+      <h4>ONSEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <a href="cs.html" target="_blank"><span>
+      <img class="logo-small img-responsive" src="../img/japanint/ninja.png">
+      </span></a>
+      <h4>MANGA AND ANIME</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <a href="cs.html" target="_blank"><span>
+      <img class="logo-small img-responsive" src="../img/japanint/sake-1.png">
+      </span></a>
+      <h4>FOOD AND DRINK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim white-txt set3">
+    <div class="col-sm-4">
+      <a href="cs.html" target="_blank"><span>
+      <img class="logo-small img-responsive" src="../img/japanint/bonsai.png">
+      </span></a>
+      <h4>GARDEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <a href="cs.html" target="_blank"><span>
+      <img class="logo-small img-responsive" src="../img/japanint/yen.png">
+      </span></a>
+      <h4>SHOPPING</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <a href="cs.html" target="_blank"><span>
+      <img class="logo-small img-responsive" src="../img/japanint/cherry-blossom.png">
+      </span></a>
+      <h4>FLOWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+        <a class="btn btn-lg" href="cs.html">
+        Show More <span class="glyphicon glyphicon-new-window"></span></a>
+</div>
+</section>
+
+
+<!-- ++++++++++++++++++++++++++Events+++++++++++++++++++++++++++++++++++++ -->
+<section id="events" class="padding-top">
+
+<div class="container-fluid text-center padding-top"> 
+  <h1 class="slideanim">Current Events</h1>
+   <p class="underline">_____</p>
+</div>
+
+<div class="container">
+<div class="row">
+
+<div class="col-md-8">
+
+<div class="swipe">
+  <ul id="slider4">
+    <li><img src="news/180223_16.jpg" alt="" /></a></li>
+    <li><img src="news/180206_22.jpg" alt="" /></li>
+    <li><img src="news/180126_01.jpg" alt="" /></li>
+    <li><img src="news/171204_kakegawa_04.jpg" alt="" /></li>
+  </ul>
+</div>
+<br/>
+<div id="pagenavi">Slide Navigation:
+  <a href="#" class="active">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+</div>
+<div class="btn-news">
+<button class="btn" onclick="t4.pause();">Pause</button>
+<button class="btn" onclick="t4.play();">Play</button>
+<button class="btn" onclick="t4.prev();">Prev</button>
+<button class="btn" onclick="t4.next();">Next</button>
+</div>
+<br>
+<div class="story-nav"> 
+  <a href="cs.html" onclick="t4.slide(0);return false;" class="grow"> <h3>Story#1:Nikko's Frozen Waterfalls: Unryu Keikoku</h3></a>
+  <a href="cs.html" onclick="t4.slide(1);return false;"> <h3>Story#2: Far-Flung Japan: Kushiro</h3></a>
+  <a href="cs.html" onclick="t4.slide(2);return false;"> <h3>Story#3: Mt. Fuji World Heritage Center Opens</h3> </a>
+  <a href="cs.html" onclick="t4.slide(3);return false;"> <h3>Story#4: Exploring Japan's Tea Town</h3> </a>
+</div>
+
+
+</div><!-- end col md 8 -->
+
+<!-- news ticker-->
+<div class="col-md-4 news-box">
+<div class="panel panel-default">
+<div class="panel-heading">
+  <span class="glyphicon glyphicon-list-alt"></span><b>Japan Ttavel News</b></div>
+<div class="panel-body">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="news-ticker-images">
+        <li class="news-item">
+          <table cellpadding="4">
+            <tr>
+              <td><img src="news/816663_6355.jpg" width="60" class="img-circle" /></td>
+              <td><strong>Southern Odyssey - Iriomote</strong>
+              <br>
+              Encouraging people to get off the beaten track and see all that Japan has to offer. 
+              <br><a href="cs.html">Read more...</a></td>
+            </tr>
+          </table>
+        </li>
+        <li class="news-item">
+          <table cellpadding="4">
+            <tr>
+              <td><img src="news/180118_24.jpg" width="60" class="img-circle" /></td>
+              <td><strong>Shinanomachi, the Backcountry of Nagano</strong>
+              <br />An outdoor lover's paradise just two hours from Tokyo  
+              <br><a href="cs.html">Read more...</a></td>
+            </tr>
+          </table>
+        </li>
+        <li class="news-item">
+          <table cellpadding="4">
+            <tr>
+              <td><img src="news/180205_01.jpg" width="60" class="img-circle" /></td>
+              <td><strong>2018 Sapporo Snow Festival</strong>
+              <br>Report from this year's festival, held February 5 to 12.
+              <br><a href="cs.html">Read more...</a></td>
+            </tr>
+          </table>
+        </li>
+        <li class="news-item">
+          <table cellpadding="4">
+            <tr>
+              <td><img src="news/171110_12.jpg" width="60" class="img-circle" /></td>
+              <td><strong>Exploring the Galapagos of the East</strong>
+              <br>Nature, food and stunning sunsets on Amami Oshima.  
+              <br><a href="cs.html">Read more...</a></td>
+            </tr>
+          </table>
+        </li>
+        <li class="news-item">
+          <table cellpadding="4">
+            <tr>
+              <td><img src="news/171017_intro01.jpg" width="60" class="img-circle" /></td>
+              <td><strong>Six And A Half Years After The Tsunami</strong>
+              <br>13th part of our open-ended series about the recovery of the tsunami-hit coast.
+              <br><a href="cs.html">Read more...</a></td>
+            </tr>
+          </table>
+        </li>
+        <li class="news-item">
+          <table cellpadding="4">
+            <tr>
+              <td><img src="news/180223_16.jpg" width="60" class="img-circle" /></td>
+              <td><strong>Nikko's Frozen Waterfalls: Unryu Keikoku</strong>
+              <br>Deep in the mountains of Nikko
+              <br><a href="cs.html">Read more...</a></td>
+            </tr>
+          </table>
+        </li>
+        <li class="news-item">
+          <table cellpadding="4">
+            <tr>
+              <td><img src="news/180206_22.jpg" width="60" class="img-circle" /></td>
+              <td><strong>Far-Flung Japan: Kushiro</strong>
+              <br>For those who want to delve deeper into untouched territories, this series is for you.
+              <br><a href="cs.html">Read more...</a></td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="panel-footer">
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+  
+</section>
+<!-- ++++++++++++++++++++++++++Contact+++++++++++++++++++++++++++++++++++++ -->
+
+<section id="contact" class="bg-grey">
+
+<div class="container-fluid text-center"> 
+  <h1 class="slideanim padding-top">Contact Us</h1>
+   <p class="underline">_____</p>
+</div>
+
+ <!-- Container (Contact Section) -->
+<div class="container-fluid">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row padding">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Manila, Philippines</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> mariarizaespedillon@gmail.com.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control slideanim" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control slideanim" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control slideanim" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-lg slideanim" type="submit">Send</button>
+        </div>    
+    </div>
+  </div>
+</div><!-- end contact -->
+<!--++++++++++++++++++++++++++++Map+++++++++++++++++++++++++++++++++++++ -->
+<!-- Add Google Maps -->
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850); 
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+    animation: google.maps.Animation.BOUNCE
+  });
+  marker.setMap(map);
+}
+</script>
+</section>
+<!--++++++++++++++++++++++++++++Social Media+++++++++++++++++++++++++++++++++++++ -->
+
+<aside class="social">
+          <ul>
+              <li><a target="_blank" href="https://www.facebook.com/public/Maria-Riza-Espedillon" class="cool-link">Facebook</a> <i class="fa fa-facebook"></i></li>
+              <li><a target="_blank" href="https://github.com/Marizallon" class="cool-link">Github</a> <i class="fa fa-github"></i></li>
+              <li><a target="_blank" href="https://plus.google.com/109825696335220479376" class="cool-link">Google Plus</a> <i class="fa fa-google-plus"></i></li>
+              <li><a class="cool-link" target="_blank" href="https://www.linkedin.com/in/maria-riza-espedillon-130683137/">Linked In</a> <i class="fa fa-linkedin"></i></li>
+          </ul>
+</aside>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+ 
+  <div class="container social2">
+
+  <div class="container">
+    <a href="#myPage" class="up-arrow" data-toggle="tooltip" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+  <p>Website Created By 
+  <a href="https://www.facebook.com/public/Maria-Riza-Espedillon" target="_blank" id="f-link">
+  <b>Maria Riza Espedillon</b></a></p> 
+  <p>All rights Reversed 2018</p> 
+  </div>
+  <a target="_blank" href="https://www.facebook.com/public/Maria-Riza-Espedillon" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+  <a target="_blank" href="https://github.com/Marizallon"  class="link github" target="_parent"><span class="fa fa-github-square"></span></a>
+  <a target="_blank" href="https://plus.google.com/109825696335220479376" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
+  <a href="https://www.linkedin.com/in/maria-riza-espedillon-130683137/" class="link google-plus" target="_parent"><span class="fa fa-linkedin-square"></span></a>
+</div>
+
+ 
+
+
+</footer>
+<!-- ++++++++++++++++++++++++++End Footer+++++++++++++++++++++++++++++++++++++ -->
+
+<!-- ++++++++++++++++++++++++++Overlay slide down nav+++++++++++++++++++++++++++++++++++++ -->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">CLOSE &times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<!-- ++++++++++++++++++++++++++Javascript/JQuery+++++++++++++++++++++++++++++++++++++ -->
+
+<!-- Jquery Bootstrap Plugin -->
+<script src="../js/jquery.min.js"></script>
+<!-- include all compiled plugins -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- main -->
+<script src="../js/script.js"></script>
+<!-- additional scripts -->
+<script src="../js/topnav.js"></script>
+<script src="../js/logform.js"></script>
+<script src="../js/totop.js"></script>
+<!-- overlay open nav -->
+<script src="../js/open.js"></script>
+<!-- togglebutton -->
+<script src="../js/toggle.js"></script>
+<!-- multi slider-->
+<script src="../js/multi.js"></script>
+<!-- news ticker-->
+<script src="../js/news.js"></script>
+<script src="../js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<!-- TOUCHSLIDER -->
+<script src="../js/touchslider.js"></script>
+<script src="../js/swipe.js"></script>
+<!-- gmapphil -->
+<script src="../js/gmapphil.js"></script>
+<!-- googlemapapi -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5Z4RpYXA6WDG2PHcFFnjVzpBU4OxsfGo&callback=myMap"></script>
+
+</body>
+</html>

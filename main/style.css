@@ -1,0 +1,359 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+
+ body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+
+    h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      /*color: #303030;*/
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+    h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      /*color: #303030;*/
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+
+  .left-a {
+    text-align: left;
+  }
+
+/*custom scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+
+
+/*custom scrollbar*/
+
+/*adjustments*/
+.margin-r {
+    margin-right: 10px;
+  }
+.div-logo {
+  padding-top: 30px;
+  text-align: center;
+  padding: 0!important;
+}
+.white-txt {
+  color: white !important;
+  text-shadow: 0 0 3px #FF0000;
+}
+.dgrey-txt {
+  color: #303030;
+}
+#centertxt {
+  text-align: center;
+}
+
+.underline {
+ color: red;
+ font-weight: bold;
+ font-size: 3em; 
+}
+
+.padding-top {
+  padding-top: 30px;
+}
+
+.plan-txt {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.set1 {
+  margin-top: 100px;
+}
+
+.set3 {
+  margin-bottom: 30px;
+}
+
+.padding {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 0 auto;
+}
+
+
+/*links*/
+  cite > a, cite > a:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+/*button*/
+.btn {
+  background-color: #f44336;
+  border-color: white;
+  color: white !important;
+}
+
+.btn:hover,.btn:focus{
+  background-color: white;
+  border-color: black;
+  color: black !important;
+  text-shadow: none;
+}
+
+.btn > a, .btn > a:hover {
+  text-decoration: none;
+  color: white !important;
+} 
+
+/*grow hover*/
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+
+.p-container a, .p-container:hover {
+  text-decoration: none;
+  padding-bottom: 50px;
+  color:#818181;
+}
+
+
+/*parallax effect*/
+.fixed-bg {
+    /* The background image */
+    background-image: url("../img/flower-japan-cherry-blossom.jpg");
+    /* Set a specified height, or the minimum height for the background image */
+    min-height:80em;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    background-size: cover;
+}
+
+/*page height per navtab*/
+#screen1 {
+  height: 100vh;
+}
+#home {
+  height: 100vh; 
+} 
+
+#explore {
+  height: auto;
+}
+
+#plan {
+ height: 100vh;
+ padding-right: 50px;
+ padding-left: 50px;
+}
+
+#interests {
+  height: auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#events {
+  position: relative;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+#contact {
+  height: auto;
+}
+/*div style*/
+ .jumbotron {
+      background-color: #f44336; /*light red*/
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+      text-shadow: 2px 2px 4px #000000;
+  }
+
+  .container-fluid {
+      padding: 60px 50px;
+  }
+
+  .p-container {
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .p-container > div {
+    padding-bottom: 30px;
+  }
+
+
+/*div bg color*/
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+
+  .bg-2 {
+      background-color: #f44336;
+      color: #ffffff !important;
+  }
+
+  .bg-fpink {
+    background-color: #FFCCCC;
+    color: #818181;
+  }
+
+/*images*/
+
+  .img-plan {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;  
+  }
+
+
+  .logo-small:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+  }
+
+  .logo-small {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto;
+      border: 10px solid transparent;
+      
+  }
+  .logo {
+      color: #f44336;
+      font-size: 200px;
+      text-shadow: 1px 1px 2px black, 0 0 3px white, 0 0 3px white;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+
+
+/*iframe*/
+
+iframe:focus { 
+    outline: none;
+}
+
+iframe[seamless] { 
+    display: block;
+}
+
+iframe{
+    overflow:hidden;
+    border: transparent;
+    border: 1px solid red;
+}
+
+
+
+/*Footer*/
+/* Add a gray background color and some padding to the footer */
+footer.bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+      height: auto;
+      min-height: 200px;
+	    padding: 25px;
+      color: white;
+  }
+    footer .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+      
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: red;
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+  }
+
+/*footer link*/
+  #f-link {
+  color: #d50000;
+  text-decoration: none;
+}
+
+ #f-link:hover {
+  text-decoration: underline;
+}
+/*end footer*/
+    /*Slide anim effects*/
+
+  .slideanim {visibility:hidden;}
+  .slide{
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 3s;
+      -webkit-animation-duration: 3s;
+      visibility: visible;
+  }
+  
+
+   @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+/*end slideanim*/

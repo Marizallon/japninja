@@ -1,0 +1,54 @@
+
+       @media (max-width: 767px) {
+      /* Hide the carousel text when the screen is less than 600 pixels wide */
+    
+      /*hide set3 from interests section*/
+      .set2 {
+        display: none; 
+      }
+      .set3 {
+        display: none; 
+      }
+
+      /*Navbar menu visible color black*/
+      
+      .navbar-header,#myNavbar, #custom-nav {
+        background-color: black !important;
+      }
+
+      .fixed-bg {
+        min-height: 70em;
+      }
+
+    /*adjustments for dropdown*/
+    .dropdown-menu {
+      position: relative!important;
+    }
+
+    .navbar-collapse {
+      max-height: 100vh!important;
+ 
+    }
+
+    /*adjusments to content*/
+
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    /*menu height adjustment*/
+
+    #plan {
+     height: 110em!important;
+    }
+    
+    
+}
+
+
+

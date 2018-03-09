@@ -1,0 +1,40 @@
+
+.modal-header, .modal-body, .modal-footer{
+  padding: 25px;
+}
+.modal-footer{
+  text-align: center;
+}
+#signup-modal-content, #forgot-password-modal-content{
+  display: none;
+}
+
+/*Modal bg*/
+.modal-content {
+  background-color: #f44336;
+}
+/*input bg*/
+.form-control {
+  background-color: black;
+  color: white;
+}
+
+/*title color*/
+.modal-title, #loginModal1 {
+  color: white;
+}
+/*link color*/
+#FPModal,#signupModal,#loginModal {
+  color: white;
+}
+/*modal footer txt*/
+#black-txt {
+  color: black;
+  font-weight: bold;
+}
+
+#close-white {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+}

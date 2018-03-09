@@ -1,0 +1,77 @@
+body {
+	background-color: #424242;
+}
+
+#wrapper {
+		width: 100%;
+		max-width: 1000px;
+		height: 100vh;
+		margin: 0 auto;
+		border: 1px solid #f44336;
+	}
+
+	.panel-top{
+		width: 100%;
+		border: 1px solid #f44336;
+		background-color: #f44336;
+		color: white;
+		text-align: center;
+	}
+
+
+
+	.bottom {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	/*clear: both;*/
+	padding: 30px;
+	color: #fff;
+	background-color: black;
+	}
+
+/*links' color*/
+li {
+	list-style: none;
+}
+
+ a.txt {
+	color: #d50000;
+	text-decoration: none;
+}
+
+a.txt:hover, a.txt:active {font-size: 150%;}
+
+.middle {
+	width: 20%;
+	height: auto;
+	padding: 0!important;
+	margin: 0 auto;
+	background-color: black;
+	}
+
+/*logo*/
+.logo {
+	margin: 0 auto;
+	width: 100%;
+	height: 30%;
+	border: 1px solid #f44336;
+	padding-top: 0!important;
+	border-radius: 50%;
+	box-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 15px #ff0080, 0 0 25px #ff0080, 0 0 35px #ff0080, 0 0 50px #ff0080, 0 0 70px #ff0080;
+	display: inline-block;
+}
+
+
+/*countdown*/
+.progress {
+	background-color: #f44336;
+}
+
+.progress .indeterminate {
+	background-color: #d50000;
+}
+
+/*grow hover*/
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
